@@ -8,7 +8,7 @@ server:
 
 spring:
   application:
-    name: master-config-client-dev
+    name: master-client-dev
   cloud:
     config:
       label: master #分支名称
