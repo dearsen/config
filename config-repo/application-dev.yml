@@ -13,5 +13,5 @@ spring:
     config:
       label: master #分支名称
       name: application #配置文件名称(文件名是application-dev.yml这种形式的可以省略name)
-      profile: dev #读取后缀名称 上述3个综合：dev分支上application-dev.yml的配置文件
+      profile: dev #读取后缀名称 上述3个综合：master分支上application-dev.yml的配置文件
       uri: http://localhost:9300
