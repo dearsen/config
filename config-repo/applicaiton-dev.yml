@@ -1,0 +1,18 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+
+server:
+  port: 9301
+
+spring:
+  application:
+    name: dev-config-client-dev
+  cloud:
+    #Config客户端配置
+    config:
+      label: master #分支名称
+      name: config-repo #配置文件名称
+      profile: dev #读取后缀名称 上述3个综合：master分支上config-dev.yml的配置文件
+      uri: http://localhost:9300 #访问配置文件地址被：http://localhost:9300/application-dev.yml
