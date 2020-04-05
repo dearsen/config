@@ -8,7 +8,7 @@ server:
 
 spring:
   application:
-    name: master-config-bus-client-dev
+    name: master-bus-client-dev
   cloud:
     config:
       label: master
