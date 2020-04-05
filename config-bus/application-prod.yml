@@ -1,0 +1,19 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+
+server:
+  port: 9304
+
+spring:
+  application:
+    name: master-config-bus-client-prod
+  cloud:
+    config:
+      label: master
+      name: application
+      profile: prod
+      discovery:
+        enabled: true
+        service-id: cloud-config-bus-server
