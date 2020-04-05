@@ -1,0 +1,17 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+
+server:
+  port: 9302
+
+spring:
+  application:
+    name: dev-config-client-prod
+  cloud:
+    config:
+      label: dev #分支名称
+      name: application #配置文件名称(文件名是application-prod.yml这种形式的可以省略name)
+      profile: prod #读取后缀名称 上述3个综合：dev分支上application-prod.yml的配置文件
+      uri: http://localhost:9300
