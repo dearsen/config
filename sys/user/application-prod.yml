@@ -1,0 +1,6 @@
+server:
+  port: 12346
+
+spring:
+  application:
+    name: master-app-user-prod
