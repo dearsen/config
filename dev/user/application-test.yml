@@ -4,7 +4,7 @@ eureka:
       defaultZone: http://localhost:8100/eureka
 
 server:
-  port: 8302
+  port: 8402
 
 spring:
   rabbitmq:
