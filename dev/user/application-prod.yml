@@ -3,6 +3,14 @@ eureka:
     service-url:
       defaultZone: http://localhost:8100/eureka
 
+logging:
+  level:
+    io:
+      swagger:
+        models:
+          parameters:
+            AbstractSerializableParameter: error
+
 management:
   endpoints:
     web:
@@ -32,3 +40,6 @@ spring:
     url: jdbc:mysql://localhost:3310/iot?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
     password: 123456
+
+custom:
+  protocol: http
