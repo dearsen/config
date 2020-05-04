@@ -19,7 +19,7 @@ management:
 
 mybatis-plus:
   configuration:
-    map-underscore-to-camel-case: true # 下划线转换成驼峰
+    map-underscore-to-camel-case: false # 下划线转换成驼峰
   global-config:
     db-config:
       logic-delete-field: flag  #全局逻辑删除字段值 3.3.0开始支持
